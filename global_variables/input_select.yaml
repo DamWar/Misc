@@ -5,3 +5,11 @@ time_dependent_lighting: #contains array of [ Time at which to activate, Tempera
     - ["10:00", 1, 1]
     - ["16:00", 1, 1]
     - ["20:00", 1, 1]
+    
+#TODO:
+# - get information from current Hue setup about temperature (the goal for now is to synchronise with current Hue as it works well for me)
+# - create automation that
+# triggers on state(input_select)[0],
+# changes temperature (turn on, startup temperature and changing input_value for the switch) on [1]
+# changes brightness (in similar manner to temperature) on [2]
+# - verify color scheme used for various day times

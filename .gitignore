@@ -4,4 +4,5 @@
 # But not these files...
 !.gitignore
 !automations.yaml
+!configuration.yaml
 !README.md

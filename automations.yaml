@@ -1,0 +1,56 @@
+- id: "1742055504680"
+  alias: Voice - decrease brightness
+  description: ""
+  triggers:
+    - trigger: conversation
+      command:
+        - dim lights
+        - decrease brightness
+        - lower brightness
+  conditions: []
+  actions:
+    - device_id: ad8c8cd044ae15473339ead9c64a32a2
+      domain: light
+      entity_id: 82f70725dd4114d2823a2b1b63fd6a62
+      type: brightness_decrease
+  mode: single
+- id: "1742055698198"
+  alias: Voice - increase brightness
+  description: ""
+  triggers:
+    - trigger: conversation
+      command:
+        - increase brightness
+        - raise brightness
+  conditions: []
+  actions:
+    - device_id: ad8c8cd044ae15473339ead9c64a32a2
+      domain: light
+      entity_id: 82f70725dd4114d2823a2b1b63fd6a62
+      type: brightness_increase
+  mode: single
+- id: "1742085457743"
+  alias: template for using variable with hue switch
+  description: ""
+  triggers: []
+  conditions: []
+  actions:
+    - type: turn_on
+      device_id: ad8c8cd044ae15473339ead9c64a32a2
+      entity_id: 82f70725dd4114d2823a2b1b63fd6a62
+      domain: light
+      brightness_pct: 50
+    - action: light.turn_on
+      target:
+        device_id: ad8c8cd044ae15473339ead9c64a32a2
+      data:
+        kelvin: "{{ states('input_number.light_temperature') }}"
+    - action: number.set_value
+      metadata: {}
+      data: {}
+    - action: input_number.set_value
+      target:
+        entity_id: input_number.light_temperature
+      data:
+        value: 2700
+  mode: single

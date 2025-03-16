@@ -6,3 +6,7 @@
 !automations.yaml
 !configuration.yaml
 !README.md
+
+#for some reason both lines are required, as excluding subdirectories required first excluding parent directory
+!global_variables 
+!global_variables/*

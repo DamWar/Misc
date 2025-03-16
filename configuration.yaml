@@ -5,13 +5,7 @@ default_config:
 frontend:
   themes: !include_dir_merge_named themes
 
-input_number:
-  light_temperature:
-    name: Temperature
-    min: 2000
-    max: 6500
-    initial: 2700
-    step: 1
+input_number: !include global_variables/input_number.yaml
 
 automation: !include automations.yaml
 script: !include scripts.yaml

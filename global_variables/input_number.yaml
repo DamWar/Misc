@@ -1,0 +1,6 @@
+light_temperature:
+  name: Temperature
+  min: 2000
+  max: 6500
+  initial: 2700
+  step: 1

@@ -1,4 +1,4 @@
-# Ignore everything
+# Ignore everything - just in case HA adds something
 *
 
 # But not these files...

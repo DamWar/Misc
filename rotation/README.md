@@ -1,0 +1,2 @@
+A program to calculate the optimal rotation of defensive skills in an MMORPG (maybe to be expanded) with regards to protection uptime
+At the moment the resulting rotation is not optimal (tweaks are yet to be made)

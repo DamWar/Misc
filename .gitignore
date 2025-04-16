@@ -5,3 +5,5 @@
 !.gitignore
 !automations.yaml
 !README.md
+!rotation
+!rotation/*
